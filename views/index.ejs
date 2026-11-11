@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <% if (message) {%> <p><%= message %></p><% } %>
+    <Form method="POST" action="/login">
+        <input type="email" name="emailOrphone" placeholder="email" required>
+        <input type="password" name="password" placeholder="password" required>
+        <button type="submit">Login</button>
+    </Form>
+    <p>No account? <a href="/register">Register</a></p>
+</body>
+</html>
